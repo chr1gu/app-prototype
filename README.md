@@ -1,3 +1,17 @@
+# About
+"Prototype" is an easy to use HTML5 Mobile App generator that will (hopefully) make my life easier. Craft and share clickable prototypes in no time with others accross various platforms (iOS, Android, Windows Phone 8)
+
+## Why
+* Building a clickable prototype accross multiple platforms, takes time
+* It often requires programming skills
+* Sharing such a prototype can be complicated
+* ...accross multiple platforms even more!
+* Imho there is not such a thing already existing for your mobile phone / tablet.
+
+## Technology
+* Native Distribution using Cordova Phonegap
+* Sencha Touch 2 Framework
+
 # Project Setup
 
 ## Prerequisites
@@ -28,3 +42,9 @@ git push -u origin master
 ```
 
 ### Phonegap Setup
+```bash
+cd ..
+cordova create Prototype be.chrigu.prototype "App Prototype Generator"
+cd Prototype
+cordova platform add ios
+```
