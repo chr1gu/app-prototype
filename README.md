@@ -16,7 +16,7 @@
 
 ## Prerequisites
 
-* Install Sencha SDK
+* Install Sencha Touch 2 SDK
 * Install Sencha CMD
 * Install GIT
 * Setup local Webserver
@@ -47,4 +47,15 @@ cd ..
 cordova create Prototype be.chrigu.prototype "App Prototype Generator"
 cd Prototype
 cordova platform add ios
+```
+
+### Sencha Touch 2 Setup
+```bash
+rm -rf www/*
+cd www
+sencha upgrade
+curl http://cdn.sencha.com/touch/sencha-touch-2.3.1-gpl.zip -o st2.zip
+unzip st2.zip
+sencha -sdk ./touch-2.3.1 generate app Prototype .
+rm -rf st2.zip touch-2.3.1
 ```
