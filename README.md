@@ -16,15 +16,14 @@
 
 ## Prerequisites
 
+* Install GIT
 * Install Sencha Touch 2 SDK
 * Install Sencha CMD
-* Install GIT
-* Setup local Webserver
 * Cordova CMD
 
 ## Project Setup
 
-### Git Project
+### Git Setup
 ```bash
 mkdir Prototype
 cd Prototype
@@ -33,7 +32,7 @@ touch README.md
 git add .
 ```
 
-_GIT REPO Erstellen_
+(Create a GIT Repository)
 
 ```bash
 git commit -m "first commit"
@@ -59,3 +58,9 @@ unzip st2.zip
 sencha -sdk ./touch-2.3.1 generate app Prototype .
 rm -rf st2.zip touch-2.3.1
 ```
+
+### Test application with built-in webserver
+```bash
+sudo sencha fs web -p 80 start -map .
+```
+(Open Browser and visit http://localhost/)
